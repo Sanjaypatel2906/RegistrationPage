@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,900;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+          *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+         }
+         body{
+            margin: 0;
+            background: url(log2img.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+        .Container{    
+         position: relative;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+            height: 500px;
+            width: 400px;
+            background-color: black;
+            opacity: .7;
+            border-radius: 20px;
+         }
+         .inputs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+         }
+         .inputstyle{
+            position: relative;
+            bottom: 1vh;
+            margin: 15px;
+            outline: none;
+            border: none;
+            height: 45px;
+            width: 270px;
+            padding-left: 45px;
+            border-radius:10px;
+            /* box-shadow: 2px 2px 10px -1px blue; */
+            /* border-bottom:2px solid blue; */
+            
+         }
+         form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+         }
+         .lbl{
+            position: relative;
+           color:white;
+           font-size: 14px;        
+         }
+         .read1{  
+            position: relative;
+            right: 2.5vw;
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 1px 1px 20px rgb(0, 0, 0);
+         
+         }
+         .read2{
+            position: relative;
+           color:white;
+           font-size: 14px;  
+
+         }
+         .signin{
+            color: rgb(0, 195, 255);
+            position: relative;
+            font-size: 13px;
+            font-weight: 300;
+         }
+         #btn{
+            height: 40px;
+            width: 200px;
+            font-family: inherit;
+            background-color: aqua;
+            outline: none;
+            border: none;
+            color: rgb(221, 49, 49);
+            border-radius: 10px;
+            font-weight: 600;
+            color: black;
+            cursor: pointer;
+         }
+         
+         input::placeholder{
+            font-weight: 600; 
+            color: black;
+            font-family: inherit;
+            font-size: 16px;
+          
+         } 
+         i{
+            color: rgb(238, 229, 229);
+            z-index: 1;
+            position: absolute;
+            left: 6%;
+            top: 11%;
+         }
+         #i2{ position: absolute ; top: 28.3%;color: black; }
+         #i3{ position: absolute ; top: 48.3%;color: black; }
+           
+         h1{
+            color:#ffffff;
+            font-size:45px;
+            text-shadow: 4px 5px 1px purple;
+         }
+          .forget{
+            position: relative;
+            left: 30%;
+            display: flex;
+           
+            font-size: 12px;
+            color: rgb(0, 195, 255);
+          }
+          #chboxx{
+            height: 15px;
+            width: 15px;
+          }
+    </style>
+</head>
+<body>
+    <div class="Container">
+       
+        <form action="">
+      
+            <div class="inputs">
+               <h1>Sign in</h1> <br>
+              
+                  <div class="icondiv">
+                    <i id="i2" class="material-symbols-outlined md-48" style="font-size: 30px;">&#xe158;</i>
+                     <input type="text" class="inputstyle" name="Email" placeholder="Email " required>
+                  </div>
+                  <div class="icondiv">
+                     <i id="i3" class="material-symbols-outlined md-48" style="font-size: 30px;">&#xe898;</i>
+                     <input type="password" class="inputstyle" name="Password material-symbols-outlined " placeholder="password" required>
+                  </div>
+                <div class="read1">
+                  <input type="checkbox" name="chbox" id="chboxx">
+                  <label class="lbl" for="chboxx">&nbsp; Remember me </label>
+                  <a href="" class="forget">Forgot password?</a>
+                </div> <br>
+                <button id="btn" >Sign In</button> <br>
+                <div class="read2">
+                  <label for="">Don't have an account? <a href="Signup.html" class="signin">&nbsp;Create</a></label>
+                </div>
+              </div>
+        </form>
+       <div class="btn1"></div>
+     </div>
+</body>
+</html>
